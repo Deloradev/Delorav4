@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delora Solar Shop | Sustainable Technology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body class="shop-page">
+    <header class="site-header site-header--shop">
+      <nav class="nav">
+        <a class="nav__brand" href="index.html">
+          <img src="assets/img/delora-logo.svg" alt="Delora Energy" width="120" height="52" />
+        </a>
+        <ul class="nav__links">
+          <li><a href="index.html#roof">Solar Roof</a></li>
+          <li><a href="index.html#panels">Solar Panels</a></li>
+          <li><a href="index.html#storage">Energy Storage</a></li>
+          <li><a href="index.html#services">Services</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a class="nav__link" href="index.html#contact">Contact</a>
+          <a class="nav__link is-active" href="shop.html" aria-current="page" data-nav-shop>Shop</a>
+          <button
+            class="icon-button"
+            id="accountButton"
+            type="button"
+            aria-haspopup="dialog"
+            aria-controls="accountModal"
+            aria-label="Account"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.866 0-7 2.239-7 5v1h14v-1c0-2.761-3.134-5-7-5z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button
+            class="icon-button icon-button--cart"
+            id="cartButton"
+            type="button"
+            aria-expanded="false"
+            aria-controls="miniCart"
+            aria-label="Open cart"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7 4h-2l-1 2v2h2l3.6 7.59-1.35 2.44c-.16.28-.25.61-.25.97 0 1.1.9 2 2 2h12v-2h-11.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.74c.75 0 1.4-.41 1.74-1.03l3.58-6.49c.08-.14.13-.31.13-.48 0-.55-.45-1-1-1h-15.31l-.94-2zm-1 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm12 0c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+                fill="currentColor"
+              />
+            </svg>
+            <span class="cart-count" data-cart-count>0</span>
+          </button>
+          <button class="nav__menu" aria-label="Open menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mini-cart" id="miniCart" hidden data-mini-cart>
+        <div class="mini-cart__header">
+          <h3>Current Cart</h3>
+          <button type="button" class="mini-cart__close" id="miniCartClose" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="mini-cart__body" data-cart-items>
+          <p class="mini-cart__empty">Your cart is empty.</p>
+        </div>
+        <div class="mini-cart__footer">
+          <div class="mini-cart__total">
+            <span>Total</span>
+            <strong data-cart-total>$0.00</strong>
+          </div>
+          <button type="button" class="btn btn--primary mini-cart__checkout" data-checkout>Continue to Checkout</button>
+        </div>
+      </div>
+            <section class="shop-hero">
+        <div class="shop-hero__grid">
+          <div class="shop-hero__content">
+            <p class="hero__eyebrow">Clean Energy Marketplace</p>
+            <h1 class="hero__title">Design a Solar Ecosystem You Love</h1>
+            <p class="hero__description">
+              Blend award-winning hardware with intelligent software bundles crafted for rooftops,
+              campuses, and microgrids. Curated kits, flexible financing, and concierge onboarding
+              make Delora the premium choice for conscious builders.
+            </p>
+            <div class="shop-hero__actions">
+              <a class="btn btn--primary" href="#collection">Build Your System</a>
+              <a class="btn btn--secondary" href="index.html#consultation">Talk to a Specialist</a>
+            </div>
+            <ul class="shop-hero__metrics">
+              <li><strong>30,000+</strong><span>Installations completed worldwide</span></li>
+              <li><strong>25 yr</strong><span>Hardware warranty across the lineup</span></li>
+              <li><strong>48 hrs</strong><span>Average time to proposal delivery</span></li>
+            </ul>
+          </div>
+          <div class="shop-hero__visual">
+            <div class="shop-hero__card">
+              <span class="shop-hero__card-label">Featured Residential Bundle</span>
+              <h3>Delora Apex Home Suite</h3>
+              <p>Pair Apex panels with Pulse storage and Core inverter for 24/7 resilience.</p>
+              <ul>
+                <li>10 kW Apex Panel Array</li>
+                <li>Pulse 15 kWh expandable battery</li>
+                <li>Core 12 kW smart inverter</li>
+              </ul>
+              <a class="shop-hero__card-link" href="#collection">See bundle details &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+        <main class="shop-main">
+      <section class="shop-highlights">
+        <article class="shop-highlight">
+          <span class="shop-highlight__icon" aria-hidden="true">&#9889;</span>
+          <h3>Tailored Bundles</h3>
+          <p>Choose curated system pairings engineered to balance production, storage, and aesthetics.</p>
+        </article>
+        <article class="shop-highlight">
+          <span class="shop-highlight__icon" aria-hidden="true">&#128752;</span>
+          <h3>Smart Monitoring</h3>
+          <p>Every purchase includes Delora Cloud analytics for predictive maintenance and insights.</p>
+        </article>
+        <article class="shop-highlight">
+          <span class="shop-highlight__icon" aria-hidden="true">&#128737;</span>
+          <h3>White-Glove Support</h3>
+          <p>Dedicated specialists guide permitting, financing, and activation in under 48 hours.</p>
+        </article>
+      </section>
+
+      <section class="shop-controls" id="collection">
+        <div class="shop-controls__filters">
+          <span class="shop-controls__label">Browse by need</span>
+          <div class="shop-controls__pills" role="group" aria-label="Product categories">
+            <button type="button" class="shop-controls__pill is-active" data-category-pill="all">All</button>
+            <button type="button" class="shop-controls__pill" data-category-pill="panels">Solar Panels</button>
+            <button type="button" class="shop-controls__pill" data-category-pill="storage">Storage</button>
+            <button type="button" class="shop-controls__pill" data-category-pill="inverters">Inverters</button>
+            <button type="button" class="shop-controls__pill" data-category-pill="accessories">Accessories</button>
+          </div>
+          <label class="shop-controls__native" for="categorySelect">
+            Category
+            <select id="categorySelect" data-filter-category>
+              <option value="all" selected>All</option>
+              <option value="panels">Solar Panels</option>
+              <option value="storage">Storage</option>
+              <option value="inverters">Inverters</option>
+              <option value="accessories">Accessories</option>
+            </select>
+          </label>
+        </div>
+        <div class="shop-controls__sort">
+          <span class="shop-controls__label">Sort collection</span>
+          <label class="shop-controls__native" for="sortSelect">
+            Sort by
+            <select id="sortSelect" data-sort-products>
+              <option value="featured" selected>Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section class="shop-collection" aria-labelledby="collectionTitle">
+        <div class="shop-collection__intro">
+          <h2 id="collectionTitle">Signature Collection</h2>
+          <p>Engineered for every scale—from modern homes to enterprise campuses. Mix and match components or start with a ready-made bundle and customize later.</p>
+        </div>
+        <div class="product-grid" data-product-grid>
+          <article class="product-card" data-product-id="pulse-15" data-product-category="storage">
+            <div class="product-card__media">
+              <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92eee?auto=format&fit=crop&w=800&q=80" alt="Delora Pulse battery" />
+              <span class="product-card__badge">Top Seller</span>
+            </div>
+            <div class="product-card__content">
+              <header class="product-card__header">
+                <h3>Delora Pulse 15 kWh</h3>
+                <span class="product-card__category">Residential Storage</span>
+              </header>
+              <p class="product-card__excerpt">Modular storage with seamless backup transitions, adaptive load shedding, and app-based automations.</p>
+              <ul class="product-card__details">
+                <li><span>Runtime</span><strong>36 hrs autonomy</strong></li>
+                <li><span>Expansion</span><strong>Up to 45 kWh</strong></li>
+              </ul>
+              <div class="product-card__meta">
+                <span class="product-card__price" data-product-price="$6,499">$6,499</span>
+                <button class="btn btn--primary" type="button" data-add-to-cart data-product-name="Delora Pulse 15 kWh" data-product-price="6499">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-product-id="vault-250" data-product-category="storage">
+            <div class="product-card__media">
+              <img src="https://images.unsplash.com/photo-1509395398378-85525651c1b7?auto=format&fit=crop&w=800&q=80" alt="Delora Vault storage" />
+              <span class="product-card__badge product-card__badge--accent">New Release</span>
+            </div>
+            <div class="product-card__content">
+              <header class="product-card__header">
+                <h3>Delora Vault 250 kWh</h3>
+                <span class="product-card__category">Commercial Storage</span>
+              </header>
+              <p class="product-card__excerpt">Megawatt-class energy storage with predictive demand response, on-site redundancy, and industrial safeguards.</p>
+              <ul class="product-card__details">
+                <li><span>Demand response</span><strong>Grid-synced</strong></li>
+                <li><span>Safety</span><strong>UL 9540A certified</strong></li>
+              </ul>
+              <div class="product-card__meta">
+                <span class="product-card__price" data-product-price="$48,500">$48,500</span>
+                <button class="btn btn--primary" type="button" data-add-to-cart data-product-name="Delora Vault 250 kWh" data-product-price="48500">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-product-id="apex-440" data-product-category="panels">
+            <div class="product-card__media">
+              <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&w=800&q=80" alt="Delora Apex solar panel" />
+              <span class="product-card__badge">High Output</span>
+            </div>
+            <div class="product-card__content">
+              <header class="product-card__header">
+                <h3>Delora Apex 440 W Panel</h3>
+                <span class="product-card__category">Monocrystalline Panel</span>
+              </header>
+              <p class="product-card__excerpt">Low-profile module with shingled cells for maximum yield under cloud cover and extreme heat.</p>
+              <ul class="product-card__details">
+                <li><span>Efficiency</span><strong>22.8%</strong></li>
+                <li><span>Design</span><strong>Black frame</strong></li>
+              </ul>
+              <div class="product-card__meta">
+                <span class="product-card__price" data-product-price="$349">$349</span>
+                <button class="btn btn--primary" type="button" data-add-to-cart data-product-name="Delora Apex 440 W Panel" data-product-price="349">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-product-id="vision-roof" data-product-category="panels">
+            <div class="product-card__media">
+              <img src="https://images.unsplash.com/photo-1466096115517-bceecbfb6fde?auto=format&fit=crop&w=800&q=80" alt="Delora Vision solar roof" />
+              <span class="product-card__badge">Architectural</span>
+            </div>
+            <div class="product-card__content">
+              <header class="product-card__header">
+                <h3>Delora Vision Solar Roof</h3>
+                <span class="product-card__category">Integrated Roofing</span>
+              </header>
+              <p class="product-card__excerpt">Hurricane-rated glass tiles with embedded heating, snow-melt control, and invisible cabling.</p>
+              <ul class="product-card__details">
+                <li><span>Durability</span><strong>Cat 5 rated</strong></li>
+                <li><span>Warranty</span><strong>25 years</strong></li>
+              </ul>
+              <div class="product-card__meta">
+                <span class="product-card__price" data-product-price="$32,900">$32,900</span>
+                <button class="btn btn--primary" type="button" data-add-to-cart data-product-name="Delora Vision Solar Roof" data-product-price="32900">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-product-id="inverter-12" data-product-category="inverters">
+            <div class="product-card__media">
+              <img src="https://images.unsplash.com/photo-1580983239739-30c99bc6434e?auto=format&fit=crop&w=800&q=80" alt="Delora Core inverter" />
+              <span class="product-card__badge">Smart Grid</span>
+            </div>
+            <div class="product-card__content">
+              <header class="product-card__header">
+                <h3>Delora Core 12 kW Inverter</h3>
+                <span class="product-card__category">Hybrid Inverter</span>
+              </header>
+              <p class="product-card__excerpt">High-voltage inverter with rapid shutdown compliance, surge protection, and EV-ready load shifting.</p>
+              <ul class="product-card__details">
+                <li><span>Output</span><strong>12 kW</strong></li>
+                <li><span>Monitoring</span><strong>Delora Cloud</strong></li>
+              </ul>
+              <div class="product-card__meta">
+                <span class="product-card__price" data-product-price="$2,499">$2,499</span>
+                <button class="btn btn--primary" type="button" data-add-to-cart data-product-name="Delora Core 12 kW Inverter" data-product-price="2499">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-product-id="optimizer-kit" data-product-category="accessories">
+            <div class="product-card__media">
+              <img src="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?auto=format&fit=crop&w=800&q=80" alt="Delora optimizer kit" />
+              <span class="product-card__badge">Bundle &amp; Save</span>
+            </div>
+            <div class="product-card__content">
+              <header class="product-card__header">
+                <h3>Delora Optimizer Kit</h3>
+                <span class="product-card__category">Performance Accessory</span>
+              </header>
+              <p class="product-card__excerpt">Panel-level optimization increases shaded output by 28% with plug-and-play installation.</p>
+              <ul class="product-card__details">
+                <li><span>Compatibility</span><strong>All Delora panels</strong></li>
+                <li><span>Boost</span><strong>+28% yield</strong></li>
+              </ul>
+              <div class="product-card__meta">
+                <span class="product-card__price" data-product-price="$189">$189</span>
+                <button class="btn btn--primary" type="button" data-add-to-cart data-product-name="Delora Optimizer Kit" data-product-price="189">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="shop-promise">
+        <div class="shop-promise__grid">
+          <article class="shop-promise__card">
+            <h3>Installation Concierge</h3>
+            <p>Partner crews finish clean installs in a single day with photo documentation and QA.</p>
+          </article>
+          <article class="shop-promise__card">
+            <h3>Financing &amp; Incentives</h3>
+            <p>Unlock solar credits, green bonds, and flexible PPAs managed through the Delora portal.</p>
+          </article>
+          <article class="shop-promise__card">
+            <h3>Performance Guarantee</h3>
+            <p>We monitor uptime 24/7 and cover production shortfalls for the life of your system.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="shop-cta">
+        <div class="shop-cta__card">
+          <h2>Ready for a Custom Blueprint?</h2>
+          <p>Combine components, upload site plans, and our engineers will return a tailored energy roadmap within two business days.</p>
+          <div class="shop-cta__actions">
+            <a class="btn btn--primary" href="index.html#consultation">Request Design Session</a>
+            <a class="btn btn--ghost" href="index.html#services">Explore Services</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer shop-footer">
+      <div class="footer__grid">
+        <div>
+          <h4>Need Help?</h4>
+          <p>
+            Chat with a specialist at (800) 555-2042 or
+            <a href="mailto:shop@delora.energy">shop@delora.energy</a>
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#consultation">Consultation</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#roof">Solar Roof</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Policies</h4>
+          <ul>
+            <li><a href="#">Shipping &amp; Delivery</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Account</h4>
+          <ul>
+            <li><a href="#" data-open-account>Sign In</a></li>
+            <li><a href="#" data-open-account data-account-action="register">Create Account</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__base">
+        <p>&copy; <span id="year"></span> Delora Energy. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="account-modal"
+      id="accountModal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="accountModalTitle"
+    >
+      <div class="account-modal__backdrop" data-account-overlay></div>
+      <div class="account-modal__panel">
+        <header class="account-modal__header">
+          <h2 id="accountModalTitle">Your Account</h2>
+          <button type="button" class="account-modal__close" id="accountModalClose" aria-label="Close account modal">&times;</button>
+        </header>
+        <div class="account-modal__content">
+          <div class="account-modal__summary" data-account-summary hidden>
+            <p class="account-modal__welcome">Welcome back, <span data-account-name></span>.</p>
+            <button type="button" class="btn btn--secondary" data-sign-out>Sign Out</button>
+          </div>
+          <div class="account-modal__tabs" data-account-tabs>
+            <button type="button" class="account-modal__tab is-active" data-account-tab="login">Sign In</button>
+            <button type="button" class="account-modal__tab" data-account-tab="register">Create Account</button>
+          </div>
+          <form class="account-form" data-account-form="login" novalidate>
+            <label>
+              Email
+              <input type="email" name="email" required placeholder="you@example.com" />
+            </label>
+            <label>
+              Password
+              <input type="password" name="password" required placeholder="Your password" />
+            </label>
+            <button type="submit" class="btn btn--primary">Sign In</button>
+          </form>
+          <form class="account-form" data-account-form="register" novalidate hidden>
+            <label>
+              Full Name
+              <input type="text" name="name" required placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required placeholder="you@example.com" />
+            </label>
+            <label>
+              Password
+              <input type="password" name="password" minlength="6" required placeholder="Create a password" />
+            </label>
+            <button type="submit" class="btn btn--primary">Create Account</button>
+          </form>
+          <p class="account-form__message" data-account-message></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
+
+
